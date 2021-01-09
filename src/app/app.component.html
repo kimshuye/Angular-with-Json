@@ -1,17 +1,10 @@
 Hello World
 
-<table>
-  <tr 
-    *ngFor="let item of datalist; let isEven = even; let isOdd = odd; let i = index;"
-        class="h-12"
-        [class.bg-gray-400]="isEven"
-        [class.bg-gray-500]="isOdd"
-    >
-    <td>
-      <span class="py-2 px-4">-</span>
-    </td>
-    <td>
-      <span>{{ item }}</span>
-    </td>
-  </tr>
-</table>
+<ul 
+  *ngFor="let item of datalist; let isEven = even; let isOdd = odd; let i = index;"
+  class="h-12"
+  [class.bg-gray-400]="isEven"
+  [class.bg-gray-500]="isOdd"
+        >
+  <li>{{item}}</li>
+</ul>
